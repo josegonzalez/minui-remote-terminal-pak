@@ -1,0 +1,5 @@
+{
+    "label": "Remote Terminal",
+    "launch": "launch.sh",
+    "description": "Manages the Remote Terminal"
+}

@@ -1,0 +1,4 @@
+bin/evtest
+bin/remote-term
+bin/sdl2imgshow
+res/BPreplayBold.otf
