@@ -4,6 +4,8 @@ BUILD_DATE := "$(shell date -u +%FT%TZ)"
 clean:
 	rm -f bin/evtest || true
 	rm -f bin/remote-term || true
+	rm -f bin/sdl2imgshow || true
+	rm -f res/BPreplayBold.otf || true
 
 build: bin/evtest bin/sdl2imgshow bin/remote-term res/BPreplayBold.otf
 
