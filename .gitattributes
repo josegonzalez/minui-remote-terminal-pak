@@ -4,4 +4,6 @@
 .gitignore export-ignore
 Dockerfile.evtest export-ignore
 Dockerfile.remote-term export-ignore
+Dockerfile.sdl2imgshow export-ignore
 Makefile export-ignore
+remote-term export-ignore
