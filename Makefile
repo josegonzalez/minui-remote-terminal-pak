@@ -1,5 +1,6 @@
 TAG ?= latest
 BUILD_DATE := "$(shell date -u +%FT%TZ)"
+PAK_NAME := $(shell jq -r .label config.json)
 
 clean:
 	rm -f bin/evtest || true
@@ -32,3 +33,9 @@ bin/remote-term:
 
 res/BPreplayBold.otf:
 	curl -sSL -o res/BPreplayBold.otf "https://raw.githubusercontent.com/shauninman/MinUI/refs/heads/main/skeleton/SYSTEM/res/BPreplayBold-unhinted.otf"
+
+release: build
+	mkdir -p dist
+	git archive --format=zip --output "dist/$(PAK_NAME).pak.zip" HEAD
+	while IFS= read -r file; do zip -r "dist/$(PAK_NAME).pak.zip" "$$file"; done < .gitarchiveinclude
+	ls -lah dist
