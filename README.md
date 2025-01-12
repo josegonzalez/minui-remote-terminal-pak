@@ -9,7 +9,7 @@ A TrimUI Brick app that starts a browser-based remote terminal.
 ## Building
 
 ```shell
-make build
+make release
 ```
 
 ## Installation
