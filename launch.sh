@@ -52,7 +52,7 @@ show_message() {
     if [ "$seconds" = "forever" ]; then
         "$progdir/bin/sdl2imgshow" \
             -i "$progdir/res/background.png" \
-            -f "$progdir/res/BPreplayBold.otf" \
+            -f "$progdir/res/fonts/BPreplayBold.otf" \
             -s 27 \
             -c "220,220,220" \
             -q \
@@ -60,7 +60,7 @@ show_message() {
     else
         "$progdir/bin/sdl2imgshow" \
             -i "$progdir/res/background.png" \
-            -f "$progdir/res/BPreplayBold.otf" \
+            -f "$progdir/res/fonts/BPreplayBold.otf" \
             -s 27 \
             -c "220,220,220" \
             -q \

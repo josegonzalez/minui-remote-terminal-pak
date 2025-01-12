@@ -1,6 +1,7 @@
+dist
 bin/*
 !bin/.gitkeep
 log/*
 !log/.gitkeep
-res/BPreplayBold.otf
-dist
+res/fonts/*
+!res/fonts/.gitkeep
