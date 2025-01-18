@@ -16,14 +16,17 @@ make release
 
 1. Mount your TrimUI Brick SD card.
 2. Download the latest release from Github. It will be named `Remote.Terminal.pak.zip`.
-3. Copy the zip file to `/Tools/tg3040/Remote Terminal.pak.zip`.
+3. Copy the zip file to `/Tools/tg3040/Remote Terminal.pak.zip`. Please ensure the new zip file name is `Remote Terminal.pak.zip`, without a dot (`.`) between the words `Remote` and `Terminal`.
 4. Extract the zip in place, then delete the zip file.
 5. Confirm that there is a `/Tools/tg3040/Remote Terminal.pak/launch.sh` file on your SD card.
 6. Unmount your SD Card and insert it into your TrimUI Brick.
 
 ## Usage
 
-Just launch it and access the device on port 8080.
+> [!IMPORTANT]
+> If the zip file was not extracted correctly, the pak may show up under `Tools > Remote`. Rename the folder to `Remote Terminal.pak` to fix this.
+
+Browse to `Tools > Remote Terminal` and press `A` to turn on the remote terminal. It is accessible on port 8080 of the device IP.
 
 ### daemon-mode
 
