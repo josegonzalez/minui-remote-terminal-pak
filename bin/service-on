@@ -1,0 +1,33 @@
+#!/bin/sh
+bindir="$(dirname "$0")"
+progdir="$(dirname "$bindir")"
+cd "$progdir" || exit 1
+PAK_NAME="$(basename "$progdir")"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$progdir/lib"
+
+main() {
+    cd "$SDCARD_PATH" || exit 1
+    if [ -f "$LOGS_PATH/$PAK_NAME.service.log" ]; then
+        mv "$LOGS_PATH/$PAK_NAME.service.log" "$LOGS_PATH/$PAK_NAME.service.log.old"
+    fi
+
+    port=8080
+    if [ -f "$progdir/port" ]; then
+        port="$(cat "$progdir/port")"
+    fi
+    if [ -z "$port" ]; then
+        port=8080
+    fi
+
+    shell="$SHELL"
+    if [ -f "$progdir/shell" ]; then
+        shell="$(cat "$progdir/shell")"
+    fi
+    if [ -z "$shell" ]; then
+        shell="/bin/sh"
+    fi
+
+    PORT="$port" SHELL="$shell" "$bindir/remote-term" >"$LOGS_PATH/$PAK_NAME.service.log" 2>&1 &
+}
+
+main "$@"
