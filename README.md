@@ -25,14 +25,18 @@ Use the correct platform for your device.
 > [!IMPORTANT]
 > If the zip file was not extracted correctly, the pak may show up under `Tools > Remote`. Rename the folder to `Remote Terminal.pak` to fix this.
 
-Browse to `Tools > Remote Terminal` and press `A` to turn on the remote terminal. It is accessible on port 8080 of the device IP.
+Browse to `Tools > Remote Terminal` and press `A` to enter the Pak.
 
-This pak runs on port `8080` (HTTP).
+### Debug Logging
 
-### port
+To enable debug logging, create a file named `debug` in the pak folder. Logs will be written to the `$SDCARD_PATH/.userdata/$PLATFORM/logs/` folder.
 
-The terminal runs on port 8080. To utilize a different port, create a file named `port` in the pak folder with the port number you wish to run on.
+### Configuration
 
-### shell
+#### port
 
-The terminal runs `/bin/sh` as the shell by default. To utilize a different shell, create a file named `shell` in the pak folder with the full path to the shell you wish to execute.
+The terminal runs on port `8080`. To utilize a different port, create a file named `port` in the pak folder with the port number you wish to run on.
+
+#### shell
+
+The terminal runs `/bin/sh` as the shell by default, but will detect the correct shell for the platform. To utilize a different shell, create a file named `shell` in the pak folder with the full path to the shell you wish to execute.
