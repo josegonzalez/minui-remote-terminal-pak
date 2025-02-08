@@ -25,7 +25,15 @@ main() {
         shell="$(cat "$progdir/shell")"
     fi
     if [ -z "$shell" ]; then
-        shell="/bin/sh"
+        if [ -x "/usr/bin/bash" ]; then
+            shell="/usr/bin/bash"
+        elif [ -x "/bin/bash" ]; then
+            shell="/bin/bash"
+        fi
+
+        if [ -z "$shell" ]; then
+            shell="/bin/sh"
+        fi
     fi
 
     PORT="$port" SHELL="$shell" "$bindir/remote-term" >"$LOGS_PATH/$PAK_NAME.service.log" 2>&1 &
