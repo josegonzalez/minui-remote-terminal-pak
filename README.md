@@ -29,14 +29,14 @@ Browse to `Tools > Remote Terminal` and press `A` to enter the Pak.
 
 ### Debug Logging
 
-To enable debug logging, create a file named `debug` in the `$SDCARD_PATH/.userdata/$PLATFORM/RemoteTerminal` folder. Logs will be written to the `$SDCARD_PATH/.userdata/$PLATFORM/logs/` folder.
+To enable debug logging, create a file named `debug` in the `$SDCARD_PATH/.userdata/$PLATFORM/Remote Terminal` folder. Logs will be written to the `$SDCARD_PATH/.userdata/$PLATFORM/logs/` folder.
 
 ### Configuration
 
 #### port
 
-The terminal runs on port `8080`. To utilize a different port, create a file named `port` in the pak folder with the port number you wish to run on.
+The terminal runs on port `8080`. To utilize a different port, create a file named `port` in the `$SDCARD_PATH/.userdata/$PLATFORM/Remote Terminal` folder with the port number you wish to run on.
 
 #### shell
 
-The terminal runs `/bin/sh` as the shell by default, but will detect the correct shell for the platform. To utilize a different shell, create a file named `shell` in the pak folder with the full path to the shell you wish to execute.
+The terminal runs `/bin/sh` as the shell by default, but will detect the correct shell for the platform. To utilize a different shell, create a file named `shell` in the `$SDCARD_PATH/.userdata/$PLATFORM/Remote Terminal` folder with the full path to the shell you wish to execute.

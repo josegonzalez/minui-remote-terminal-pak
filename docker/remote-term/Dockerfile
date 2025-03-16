@@ -1,6 +1,6 @@
 FROM golang:1.23.4-bullseye
 
-ADD remote-term /go/src/github.com/josegonzalez/go-remote-term
+ADD . /go/src/github.com/josegonzalez/go-remote-term
 WORKDIR /go/src/github.com/josegonzalez/go-remote-term
 
 ENV GOOS=linux
