@@ -1,7 +1,4 @@
-bin/arm/jq
-bin/arm/jq.LICENSE
 bin/arm64/remote-term
-bin/arm64/remote-term.LICENSE
 bin/arm64/jq
 bin/arm64/jq.LICENSE
 bin/rg35xxplus/minui-list
