@@ -46,7 +46,7 @@ main() {
         fi
     fi
 
-    PORT="$port" SHELL="$shell" "$BIN_DIR/remote-term" >"$LOGS_PATH/$PAK_NAME.service.txt" 2>&1 &
+    PORT="$port" SHELL="$shell" remote-term >"$LOGS_PATH/$PAK_NAME.service.txt" 2>&1 &
 }
 
 main "$@"
