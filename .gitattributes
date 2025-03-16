@@ -2,7 +2,5 @@
 .gitattributes export-ignore
 .gitarchiveinclude export-ignore
 .gitignore export-ignore
-Dockerfile.remote-term export-ignore
-Dockerfile.sdl2imgshow export-ignore
 Makefile export-ignore
-remote-term export-ignore
+docker export-ignore
