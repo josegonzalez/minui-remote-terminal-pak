@@ -29,7 +29,7 @@ Browse to `Tools > Remote Terminal` and press `A` to enter the Pak.
 
 ### Debug Logging
 
-To enable debug logging, create a file named `debug` in the `$SDCARD_PATH/.userdata/$PLATFORM/Remote Terminal` folder. Logs will be written to the `$SDCARD_PATH/.userdata/$PLATFORM/logs/` folder.
+Debug logs are written to the`$SDCARD_PATH/.userdata/$PLATFORM/logs/` folder.
 
 ### Configuration
 
