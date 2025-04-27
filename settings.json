@@ -1,12 +1,4 @@
 {
-    "label": "Remote Terminal",
-    "launch": "launch.sh",
-    "description": "Manages the Remote Terminal",
-    "pak_type": "tool",
-    "platforms": [
-        "rg35xxplus",
-        "tg5040"
-    ],
     "settings": [
         {
             "name": "Enable",
