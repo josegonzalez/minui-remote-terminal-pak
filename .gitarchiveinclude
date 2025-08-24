@@ -1,6 +1,8 @@
 bin/arm64/remote-term
 bin/arm64/jq
 bin/arm64/jq.LICENSE
+bin/my355/minui-list
+bin/my355/minui-presenter
 bin/rg35xxplus/minui-list
 bin/rg35xxplus/minui-presenter
 bin/tg5040/minui-list
